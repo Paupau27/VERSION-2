@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>School Inventory System</title>
+    <link rel="stylesheet" href="css1/styles.css" />
+</head>
+
+<script>
+    function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("hidden");
+    }
+</script>
+
+<body>
+
+    <header class="navbar">
+        <h1>Systems Plus Computer College</h1>
+        <nav>
+            <a href="#">My Account</a>
+            <a href="#">Logout</a>
+            <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar hidden" id="sidebar">
+            <h2>Menu</h2>
+            <a href="#">🏠 Dashboard</a>
+            <a href="#">🖥️ Computers</a>
+            <a href="#">📡 Devices</a>
+            <a href="#">📚 School Supplies</a>
+            <a href="#">➕ Add Item</a>
+            <a href="#">📊 Reports</a>
+            <a href="#">⚙ Settings</a>
+        </aside>
+
+        <main class="main">
+            <section class="card">
+                <h3>Computer Laboratory Inventory</h3>
+                <a href="#" class="btn">+ Add New Equipment</a>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Item Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Desktop Computer</td>
+                            <td>Computer Unit</td>
+                            <td>25</td>
+                            <td>Available</td>
+                            <td>
+                                <a href="#" class="btn">Edit</a>
+                                <a href="#" class="btn">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Projector</td>
+                            <td>Device</td>
+                            <td>3</td>
+                            <td>In Use</td>
+                            <td>
+                                <a href="#" class="btn">Edit</a>
+                                <a href="#" class="btn">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Router</td>
+                            <td>Network Device</td>
+                            <td>5</td>
+                            <td>Available</td>
+                            <td>
+                                <a href="#" class="btn">Edit</a>
+                                <a href="#" class="btn">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        © 2025 School Inventory System | Systems Plus Computer College
+
+</body>
+
+</html>
